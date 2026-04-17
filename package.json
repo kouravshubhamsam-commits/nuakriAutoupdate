@@ -6,7 +6,7 @@
   "scripts": {
     "test": "playwright test",
     "test:naukri": "xvfb-run -a npx playwright test tests/naukri.spec.ts --project=chromium",
-    "test:naukri:ci": "npx playwright test tests/naukri.spec.ts --project=chromium --headless",
+    "test:naukri:ci": "npx playwright test tests/naukri.spec.ts --project=chromium",
     "test:naukri:xvfb": "xvfb-run -a npx playwright test tests/naukri.spec.ts --project=chromium",
     "test:headed": "xvfb-run -a npx playwright test tests/naukri.spec.ts --headed --project=chromium",
     "test:debug": "xvfb-run -a npx playwright test tests/naukri.spec.ts --debug --project=chromium"

@@ -30,8 +30,8 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    /* Run in headed mode under Xvfb for containerized environments */
-    headless: false,
+    /* Use headless mode on CI, headed locally under xvfb-run. */
+    headless: process.env.CI ? true : false,
     userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
     locale: 'en-US',
     timezoneId: 'Asia/Kolkata',
