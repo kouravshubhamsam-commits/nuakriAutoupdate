@@ -1,0 +1,30 @@
+{
+  "name": "nuakriautoupdate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:naukri": "xvfb-run -a npx playwright test tests/naukri.spec.ts --project=chromium",
+    "test:naukri:ci": "npx playwright test tests/naukri.spec.ts --project=chromium --headless",
+    "test:naukri:xvfb": "xvfb-run -a npx playwright test tests/naukri.spec.ts --project=chromium",
+    "test:headed": "xvfb-run -a npx playwright test tests/naukri.spec.ts --headed --project=chromium",
+    "test:debug": "xvfb-run -a npx playwright test tests/naukri.spec.ts --debug --project=chromium"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kouravshubhamsam-commits/nuakriAutoupdate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kouravshubhamsam-commits/nuakriAutoupdate/issues"
+  },
+  "homepage": "https://github.com/kouravshubhamsam-commits/nuakriAutoupdate#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
